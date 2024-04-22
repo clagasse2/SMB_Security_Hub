@@ -1,0 +1,42 @@
+<div class="grid-item" data-control="1.1,2.1,2.2" data-difficulty="easy"><a href="Tools/Qualys%20Global%20AssetView.html"><h3>Qualys Global AssetView</h3></a></div>
+<div class="grid-item" data-control="control_1.1,control_2.1,control_3.1,control_3.2,control_5.1" data-difficulty="easy"><a href="Tools/CIS%20Spreadsheet.html"><h3>CIS Spreadsheet</h3></a></div>
+<div class="grid-item" data-control="control_1.1,control_1.2,control_2.2" data-difficulty="hard"><a href="Tools/Wazuh.html"><h3>Wazuh</h3></a></div>
+<div class="grid-item" data-control="control_1.2" data-difficulty="medium"><a href="Tools/CIS%20Enterprise%20Asset%20Management%20Policy%20Template.html"><h3>CIS Enterprise Asset Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_2.3" data-difficulty="medium"><a href="Tools/CIS%20Software%20Asset%20Management%20Policy%20Template.html"><h3>CIS Software Asset Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_2.3" data-difficulty="easy"><a href="Tools/Guide%20to%20Uninstall%20Applications%20on%20Mac.html"><h3>Guide to Uninstall Applications on Mac</h3></a></div>
+<div class="grid-item" data-control="control_2.3" data-difficulty="easy"><a href="Tools/Guide%20to%20Uninstall%20Application%20on%20Windows.html"><h3>Guide to Uninstall Application on Windows</h3></a></div>
+<div class="grid-item" data-control="control_3.2,control_3.4,control_3.5" data-difficulty="medium"><a href="Tools/CIS%20Data%20Management%20Policy%20Template.html"><h3>CIS Data Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_3.3" data-difficulty="medium"><a href="Tools/Access%20Control%20Setting%20Windows.html"><h3>Access Control Setting Windows</h3></a></div>
+<div class="grid-item" data-control="control_3.3" data-difficulty="medium"><a href="Tools/Access%20Control%20Setting%20Mac.html"><h3>Access Control Setting Mac</h3></a></div>
+<div class="grid-item" data-control="control_3.5,control_3.6" data-difficulty="easy"><a href="Tools/Apple%20FileVault.html"><h3>Apple FileVault</h3></a></div>
+<div class="grid-item" data-control="control_3.6" data-difficulty="easy"><a href="Tools/Windows%20BitLocker.html"><h3>Windows BitLocker</h3></a></div>
+<div class="grid-item" data-control="control_3.5" data-difficulty="medium"><a href="Tools/Windows%20SDelete.html"><h3>Windows SDelete</h3></a></div>
+<div class="grid-item" data-control="control_4.1" data-difficulty="medium"><a href="Tools/CIS%20Secure%20Configuration%20Management%20Policy%20Template.html"><h3>CIS Secure Configuration Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_4.1" data-difficulty="easy"><a href="Tools/CIS%20CAT%20Lite.html"><h3>CIS CAT Lite</h3></a></div>
+<div class="grid-item" data-control="control_4.2,control_4.1" data-difficulty="medium"><a href="Tools/CIS%20Benchmarks.html"><h3>CIS Benchmarks</h3></a></div>
+<div class="grid-item" data-control="control_4.4,control_4.5" data-difficulty="medium"><a href="Tools/Windows%20Firewall.html"><h3>Windows Firewall</h3></a></div>
+<div class="grid-item" data-control="control_4.5" data-difficulty="medium"><a href="Tools/Apple%20Firewall.html"><h3>Apple Firewall</h3></a></div>
+<div class="grid-item" data-control="control_5.1,control_5.2,control_5.3" data-difficulty="medium"><a href="Tools/CIS%20Account%20&%20Credential%20Management%20Policy%20Template.html"><h3>CIS Account & Credential Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_5.2" data-difficulty="easy"><a href="Tools/CIS%20Password%20Policy%20Guide.html"><h3>CIS Password Policy Guide</h3></a></div>
+<div class="grid-item" data-control="control_4.6" data-difficulty="hard"><a href="Tools/Secure%20Shell.html"><h3>Secure Shell</h3></a></div>
+<div class="grid-item" data-control="control_5.4" data-difficulty="easy"><a href="Tools/Guide%20to%20separate%20administrator%20account.html"><h3>Guide to separate administrator account</h3></a></div>
+<div class="grid-item" data-control="control_7.1,control_7.2" data-difficulty="medium"><a href="Tools/CIS%20Vulnerability%20Management%20Policy%20Template.html"><h3>CIS Vulnerability Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_7.3" data-difficulty="easy"><a href="Tools/Ensure%20Windows%20Automatic%20Updates%20are%20On.html"><h3>Ensure Windows Automatic Updates are On</h3></a></div>
+<div class="grid-item" data-control="control_7.3,control_7.4" data-difficulty="easy"><a href="Tools/Mac%20Automatic%20Updates.html"><h3>Mac Automatic Updates</h3></a></div>
+<div class="grid-item" data-control="control_8.1" data-difficulty="medium"><a href="Tools/CIS%20Audit%20Log%20Management%20Policy%20Template.html"><h3>CIS Audit Log Management Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_9.1" data-difficulty="easy"><a href="Tools/Qualys%20Browser%20Check.html"><h3>Qualys Browser Check</h3></a></div>
+<div class="grid-item" data-control="control_9.1" data-difficulty="easy"><a href="Tools/Gmail.html"><h3>GMail</h3></a></div>
+<div class="grid-item" data-control="control_9.2" data-difficulty="easy"><a href="Tools/Quad9%20.html"><h3>Quad9 </h3></a></div>
+<div class="grid-item" data-control="control_10.1,control_10.2" data-difficulty="easy"><a href="Tools/Windows%20Defender.html"><h3>Windows Defender</h3></a></div>
+<div class="grid-item" data-control="control_10.1,control_10.2" data-difficulty="easy"><a href="Tools/Mac%20Built%20In%20Antivirus.html"><h3>Mac Built In Antivirus</h3></a></div>
+<div class="grid-item" data-control="control_10.3" data-difficulty="easy"><a href="Tools/Guide%20to%20Disable%20Autorun%20&%20Autoplay.html"><h3>Guide to Disable Autorun & Autoplay</h3></a></div>
+<div class="grid-item" data-control="control_11.1" data-difficulty="medium"><a href="Tools/CIS%20Data%20Recovery%20Policy%20Template%20.html"><h3>CIS Data Recovery Policy Template </h3></a></div>
+<div class="grid-item" data-control="control_11.2,control_11.3,control_11.4" data-difficulty="easy"><a href="Tools/Windows%20Backup.html"><h3>Windows Backup</h3></a></div>
+<div class="grid-item" data-control="control_11.2,control_11.4" data-difficulty="easy"><a href="Tools/Apple%20Time%20Machine.html"><h3>Apple Time Machine</h3></a></div>
+<div class="grid-item" data-control="control_11.2,control_11.3,control_11.4" data-difficulty="easy"><a href="Tools/Apple%20iCloud%20.html"><h3>Apple iCloud </h3></a></div>
+<div class="grid-item" data-control="control_12.1" data-difficulty="medium"><a href="Tools/CIS%20Securing%20Home%20Networks%20&%20Small%20Office%20Equipment.html"><h3>CIS Securing Home Networks & Small Office Equipment</h3></a></div>
+<div class="grid-item" data-control="control_14.2,control_14.3,control_14.4,control_14.5,control_14.6,control_14.7,control_14.8" data-difficulty="easy"><a href="Tools/CIS%20Cyber%20Education%20Worksheet.html"><h3>CIS Cyber Education Worksheet</h3></a></div>
+<div class="grid-item" data-control="control_14.1" data-difficulty="medium"><a href="Tools/CIS%20Security%20Awareness%20Skills%20Training%20Policy%20Template.html"><h3>CIS Security Awareness Skills Training Policy Template</h3></a></div>
+<div class="grid-item" data-control="control_15.1" data-difficulty="easy"><a href="Tools/CIS%20Service%20Provider%20Inventory%20Worksheet.html"><h3>CIS Service Provider Inventory Worksheet</h3></a></div>
+<div class="grid-item" data-control="control_17.1,control_17.2,control_17.3" data-difficulty="easy"><a href="Tools/CIS%20Incident%20Response%20Worksheet.html"><h3>CIS Incident Response Worksheet</h3></a></div>
+<div class="grid-item" data-control="control_17.1,control_17.2,control_17.3" data-difficulty="medium"><a href="Tools/CIS%20Incident%20Response%20Policy%20Template.html"><h3>CIS Incident Response Policy Template</h3></a></div>

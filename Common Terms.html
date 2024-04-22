@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Terms</title>
+    <link rel="stylesheet" href="navbar.css"> <!-- Linking external CSS for the navbar -->
+    <style>
+        /* Internal CSS for the rest of the page */
+        body, h1, h3, p {
+            margin: 0;
+            padding: 0;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Increased spacing between header and grid */
+        }
+
+        .separator {
+            height: 2px;
+            background-color: black;
+            width: 80px;
+            margin: 20px auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for a 3x2 grid */
+            gap: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Single column for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-brand"><a href="index.html"><h2>SMB Security Hub</h2></a></div>
+        <div class="nav-links">
+            <a href="Common Terms.html">Common Terms</a>
+            <a href="Laws & Regulations.html">Laws & Regulations</a>
+            <a href="Tools.html">Tools</a>
+            <a href="About.html">About</a>
+        </div>
+    </div>
+
+<div class="header">
+    <h1>Common Terms</h1>
+    <div class="separator"></div>
+    <p class="subtext">An overview of terms frequently encountered.</p>
+</div>
+
+<div class="grid-container">
+    <div class="grid-item">
+        <h3>Protected Health Information (PHI) or (ePHI)</h3>
+        <p><br>Protected health information under U.S. law is any information about health status, provision of health care, or payment for health care that is created or collected by a Covered Entity, and can be linked to a specific individual</p>
+    </div>
+    <div class="grid-item">
+        <h3>Personal Identifiable Information</h3>
+        <p><br>Any representation of information that permits the identity of an individual to whom the information applies to be reasonably inferred by either direct or indirect means</p>
+    </div>
+    <div class="grid-item">
+        <h3>Breach</h3>
+        <p><br>Unauthorized access or acquisition to computerized data that compromises the security or confidentiality of personal information, excluding certain good faith acquisitions</p>
+    </div>
+    <div class="grid-item">
+        <h3>Center for Internet Security Controls</h3>
+        <p><br>The Center for Internet Security (CIS) Security Controls are a prioritized set of actions for cybersecurity that form a defense-in-depth set of specific and actionable best practices to mitigate the most common cyber attacks</p>
+    </div>
+    <div class="grid-item">
+        <h3>Encryption</h3>
+        <p><br>Encryption is the process of protecting information or data by using mathematical models to scramble it in such a way that only the parties who have the key to unscramble it can access it</p>
+    </div>
+    <div class="grid-item">
+        <h3>Term 6</h3>
+        <p><br>Description of Term 6.</p>
+    </div>
+</div>
+
+</body>
+</html>

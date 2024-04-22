@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools</title>
+    <link rel="stylesheet" href="navbar.css"> <!-- Ensure this path is correct -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .filters {
+            width: 20%;
+            padding-right: 20px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Changed to 3 columns */
+            gap: 10px;
+            padding: 10px;
+            width: calc(100% - 20px); /* Adjust width to account for padding */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center; /* Ensure the text within is centered */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            background-image: url('Images/background.webp'); /* Adjust path as needed */
+            background-size: cover; /* Cover the entire div */
+            background-position: center; /* Center the background image */
+            color: #000000; /* Change text color if needed for better visibility */
+            height: 150px; /* Fixed height to ensure all items are the same size */
+            flex-grow: 1; /* NEW: Allow boxes to grow and fill the column width */
+            margin: 2px; /* Optional: Adds a small margin around items */
+            box-sizing: border-box; /* Ensures padding and border are included in the width/height calculation */
+        }
+
+        .grid-item a {
+            color: inherit; /* Ensures links inside grid-items inherit the text color */
+            text-decoration: none; /* Optional: removes underline from links */
+        }
+
+
+    </style>
+</head>
+<script src="ToolsFilterLogic.js"></script>
+<body>
+
+    <div class="navbar">
+        <div class="navbar-brand"><a href="index.html"><h2>SMB Security Hub</h2></a></div>
+        <div class="nav-links">
+            <a href="Common Terms.html">Common Terms</a>
+            <a href="Laws & Regulations.html">Laws & Regulations</a>
+            <a href="Tools.html">Tools</a>
+            <a href="About.html">About</a>
+        </div>
+    </div>
+
+<div class="header">
+    <h1>Tools</h1>
+    <div class="separator"></div>
+    <p class="subtext">Use the filters to find products your organizaiton can use <br> <b>Aim to use one product from each CIS control</b></p>
+</div>
+
+<div class="content">
+    <div class="filters">
+        <label for="cis-control">CIS Control:</label>
+        <select id="cis-control">
+            <option value="all">All</option>
+            <option value="control_1.1">Establish and Maintain Detailed Enterprise Asset Inventory</option>
+            <option value="control_1.2">Address Unauthorized Assets</option>
+            <option value="control_2.1">Establish and Maintain a Software Inventory</option>
+            <option value="control_2.2">Ensure Authorized Software is Currently Supported</option>
+            <option value="control_2.3">Address Unauthorized Software</option>
+            <option value="control_3.1">Establish and Maintain a Data Management Process</option>
+            <option value="control_3.2">Establish and Maintain a Data Inventory</option>
+            <option value="control_3.3">Configure Data Access Control Lists</option>
+            <option value="control_3.4">Enforce Data Retention</option>
+            <option value="control_3.5">Securely Dispose of Data</option>
+            <option value="control_3.6">Encrypt Data on End-User Device</option>
+            <option value="control_4.1">Establish and Maintain a Secure Configuration Process</option>
+            <option value="control_4.2">Establish and Maintain a Secure Configuration Process for Network Infrastructure</option>
+            <option value="control_4.3">Configure Automatic Session Locking on Enterprise Assets</option>
+            <option value="control_4.4">Implement and Manage a Firewall on Servers</option>
+            <option value="control_4.5">Implement and Manage a Firewall on End-User Devices</option>
+            <option value="control_4.6">Securely Manage Enterprise Assets and Software</option>
+            <option value="control_4.7">Manage Default Accounts on Enterprise Assets and Software</option>
+            <option value="control_5.1">Establish and Maintain an Inventory of Accounts</option>
+            <option value="control_5.2">Use Unique Passwords</option>
+            <option value="control_5.3">Disable Dormant Accounts</option>
+            <option value="control_5.4">Restrict Administrator Privileges to Dedicated Administrator Accounts</option>
+            <option value="control_6.1">Establish an Access Granting Process</option>
+            <option value="control_6.2">Establish an Access Revoking Process</option>
+            <option value="control_6.3">Require MFA for Externally-Exposed Applications</option>
+            <option value="control_6.4">Require MFA for Remote Network Access</option>
+            <option value="control_6.5">Require MFA for Administrative Access</option>
+            <option value="control_7.1">Establish and Maintain a Vulnerability Management Process</option>
+            <option value="control_7.2">Establish and Maintain a Remediation Process</option>
+            <option value="control_7.3">Perform Automated Operating System Patch Management</option>
+            <option value="control_7.4">Perform Automated Application Patch Management</option>
+            <option value="control_8.1">Establish and Maintain an Audit Log Management Process</option>
+            <option value="control_8.2">Collect Audit Logs</option>
+            <option value="control_8.3">Ensure Adequate Audit Log Storage</option>
+            <option value="control_9.1">Ensure Use of Only Fully Supported Browsers and Email Clients</option>
+            <option value="control_9.2">Use DNS Filtering Services</option>
+            <option value="control_10.1">Deploy and Maintain Anti-Malware Software</option>
+            <option value="control_10.2">Configure Automatic Anit-Malware Signature Updates</option>
+            <option value="control_10.3">Disable Autorun and Autoplay for Removable Media</option>
+            <option value="control_11.1">Establish and Maintain a Data Recovery Process</option>
+            <option value="control_11.2">Perform Automated Backups</option>
+            <option value="control_11.3">Protect Recovery Data</option>
+            <option value="control_11.4">Establish and Maintain an Isolated Instance of Recovery Data</option>
+            <option value="control_12.1">Ensure Network Infrastructure is Up-to-Date</option>
+            <option value="control_14.1">Establish and Maintain a Security Awarness Program</option>
+            <option value="control_14.2">Train Workforce Members to Recognize Social Engineering Attacks</option>
+            <option value="control_14.3">Train Workforce Members on Authentication Best Practices</option>
+            <option value="control_14.4">Train Workforce Members Data Handling Best Practices</option>
+            <option value="control_14.5">Train Workforce Members on Causes of Unintentional Data Exposure</option>
+            <option value="control_14.6">Train Workforce Members on Recognizing and Reporting Security Incidents</option>
+            <option value="control_14.7">Train Workforce Members on How to Identify and Report if Their Enterprise Assets are Missing Security Updates</option>
+            <option value="control_14.8">Train Workforce Members on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks</option>
+            <option value="control_15.1">Establish and Maintain an Inventory of Service Providers</option>
+            <option value="control_17.1">Designate Personnel to Manage Incident Handling</option>
+            <option value="control_17.2">Establish and Maintain Contact Information for Reporting Security Incidents</option>
+            <option value="control_17.3">Establish and Maintain an Enterprise Process for Reporting Incidents</option>
+            <!-- More options as needed -->
+        </select>
+        
+        <label for="difficulty">Difficulty to Implement:</label>
+        <select id="difficulty">
+            <option value="all">All</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+
+    <div class="grid">
+        <!-- Example grid item with data attributes for JS filtering -->
+        <div class="grid-item" data-control="control_1.1,control_2.1,control_2.2,control_4.7,control_4.6,control_5.1,control_5.3,control_12.1" data-difficulty="easy"><a href="Tools/Qualys_Global_AssetView.html"><h3>Qualys Global AssetView</h3></a></div>
+        <div class="grid-item" data-control="control_1.1,control_2.1,control_3.1,control_3.2,control_5.1,control_15.1" data-difficulty="easy"><a href="Tools/CIS_Spreadsheet.html"><h3>CIS Spreadsheet</h3></a></div>
+        <div class="grid-item" data-control="control_1.1,control_1.2,control_2.2,control_2.1,control_4.6,control_4.7,control_5.1,control_5.3,control_7.3,control_7.4,control_8.2,control_8.3,control_8.1,control_10.1,control_10.2" data-difficulty="hard"><a href="Tools/Wazuh.html"><h3>Wazuh</h3></a></div>
+        <div class="grid-item" data-control="control_1.2" data-difficulty="medium"><a href="Tools/CIS_Enterprise_Asset_Management_Policy_Template.html"><h3>CIS Enterprise Asset Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_2.3" data-difficulty="medium"><a href="Tools/CIS_Software_Asset_Management_Policy_Template.html"><h3>CIS Software Asset Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_2.3" data-difficulty="easy"><a href="Tools/Guide_to_Uninstall_Applications_on_Mac.html"><h3>Guide to Uninstall Applications on Mac</h3></a></div>
+        <div class="grid-item" data-control="control_2.3" data-difficulty="easy"><a href="Tools/Guide_to_Uninstall_Application_on_Windows.html"><h3>Guide to Uninstall Application on Windows</h3></a></div>
+        <div class="grid-item" data-control="control_3.2,control_3.4,control_3.5,control_3.1" data-difficulty="medium"><a href="Tools/CIS_Data_Management_Policy_Template.html"><h3>CIS Data Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_3.3" data-difficulty="medium"><a href="Tools/Access_Control_Setting_Windows.html"><h3>Access Control Setting Windows</h3></a></div>
+        <div class="grid-item" data-control="control_3.3" data-difficulty="medium"><a href="Tools/Access_Control_Setting_Mac.html"><h3>Access Control Setting Mac</h3></a></div>
+        <div class="grid-item" data-control="control_3.5,control_3.6" data-difficulty="easy"><a href="Tools/Apple_FileVault.html"><h3>Apple FileVault</h3></a></div>
+        <div class="grid-item" data-control="control_3.6" data-difficulty="easy"><a href="Tools/Windows_BitLocker.html"><h3>Windows BitLocker</h3></a></div>
+        <div class="grid-item" data-control="control_3.5" data-difficulty="medium"><a href="Tools/Windows_SDelete.html"><h3>Windows SDelete</h3></a></div>
+        <div class="grid-item" data-control="control_4.1" data-difficulty="medium"><a href="Tools/CIS_Secure_Configuration_Management_Policy_Template.html"><h3>CIS Secure Configuration Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_4.1,control_4.3,control_4.2,control_4.7" data-difficulty="easy"><a href="Tools/CIS_CAT_Lite.html"><h3>CIS CAT Lite</h3></a></div>
+        <div class="grid-item" data-control="control_4.2,control_4.1,control_4.3" data-difficulty="medium"><a href="Tools/CIS_Benchmarks.html"><h3>CIS Benchmarks</h3></a></div>
+        <div class="grid-item" data-control="control_4.4,control_4.5" data-difficulty="medium"><a href="Tools/Windows_Firewall.html"><h3>Windows Firewall</h3></a></div>
+        <div class="grid-item" data-control="control_4.5" data-difficulty="medium"><a href="Tools/Apple_Firewall.html"><h3>Apple Firewall</h3></a></div>
+        <div class="grid-item" data-control="control_5.1,control_5.2,control_5.3,control_6.1,control_6.2,control_6.3,control_6.4,control_6.5" data-difficulty="medium"><a href="Tools/CIS_Account_&_Credential_Management_Policy_Template.html"><h3>CIS Account & Credential Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_5.2" data-difficulty="easy"><a href="Tools/CIS_Password_Policy_Guide.html"><h3>CIS Password Policy Guide</h3></a></div>
+        <div class="grid-item" data-control="control_4.6" data-difficulty="hard"><a href="Tools/Secure_Shell.html"><h3>Secure Shell</h3></a></div>
+        <div class="grid-item" data-control="control_5.4" data-difficulty="easy"><a href="Tools/Guide_to_separate_administrator_account.html"><h3>Guide to separate administrator account</h3></a></div>
+        <div class="grid-item" data-control="control_7.1,control_7.2" data-difficulty="medium"><a href="Tools/CIS_Vulnerability_Management_Policy_Template.html"><h3>CIS Vulnerability Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_7.3" data-difficulty="easy"><a href="Tools/Ensure_Windows_Automatic_Updates_are_On.html"><h3>Ensure Windows Automatic Updates are On</h3></a></div>
+        <div class="grid-item" data-control="control_7.3,control_7.4" data-difficulty="easy"><a href="Tools/Mac_Automatic_Updates.html"><h3>Mac Automatic Updates</h3></a></div>
+        <div class="grid-item" data-control="control_8.1" data-difficulty="medium"><a href="Tools/CIS_Audit_Log_Management_Policy_Template.html"><h3>CIS Audit Log Management Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_9.1" data-difficulty="easy"><a href="Tools/Qualys_Browser_Check.html"><h3>Qualys Browser Check</h3></a></div>
+        <div class="grid-item" data-control="control_9.1" data-difficulty="easy"><a href="Tools/Gmail.html"><h3>Gmail</h3></a></div>
+        <div class="grid-item" data-control="control_9.2" data-difficulty="easy"><a href="Tools/Quad9_.html"><h3>Quad9 </h3></a></div>
+        <div class="grid-item" data-control="control_10.1,control_10.2" data-difficulty="easy"><a href="Tools/Windows_Defender.html"><h3>Windows Defender</h3></a></div>
+        <div class="grid-item" data-control="control_10.1,control_10.2" data-difficulty="easy"><a href="Tools/Mac_Built_In_Antivirus.html"><h3>Mac Built In Antivirus</h3></a></div>
+        <div class="grid-item" data-control="control_10.3" data-difficulty="easy"><a href="Tools/Guide_to_Disable_Autorun_&_Autoplay.html"><h3>Guide to Disable Autorun & Autoplay</h3></a></div>
+        <div class="grid-item" data-control="control_11.1" data-difficulty="medium"><a href="Tools/CIS_Data_Recovery_Policy_Template_.html"><h3>CIS Data Recovery Policy Template </h3></a></div>
+        <div class="grid-item" data-control="control_11.2,control_11.3,control_11.4" data-difficulty="easy"><a href="Tools/Windows_Backup.html"><h3>Windows Backup</h3></a></div>
+        <div class="grid-item" data-control="control_11.2,control_11.4" data-difficulty="easy"><a href="Tools/Apple_Time_Machine.html"><h3>Apple Time Machine</h3></a></div>
+        <div class="grid-item" data-control="control_11.2,control_11.3,control_11.4" data-difficulty="easy"><a href="Tools/Apple_iCloud_.html"><h3>Apple iCloud </h3></a></div>
+        <div class="grid-item" data-control="control_12.1" data-difficulty="medium"><a href="Tools/CIS_Securing_Home_Networks_&_Small_Office_Equipment.html"><h3>CIS Securing Home Networks & Small Office Equipment</h3></a></div>
+        <div class="grid-item" data-control="control_14.2,control_14.3,control_14.4,control_14.5,control_14.6,control_14.7,control_14.8" data-difficulty="easy"><a href="Tools/CIS_Cyber_Education_Worksheet.html"><h3>CIS Cyber Education Worksheet</h3></a></div>
+        <div class="grid-item" data-control="control_14.1" data-difficulty="medium"><a href="Tools/CIS_Security_Awareness_Skills_Training_Policy_Template.html"><h3>CIS Security Awareness Skills Training Policy Template</h3></a></div>
+        <div class="grid-item" data-control="control_15.1" data-difficulty="easy"><a href="Tools/CIS_Service_Provider_Inventory_Worksheet.html"><h3>CIS Service Provider Inventory Worksheet</h3></a></div>
+        <div class="grid-item" data-control="control_17.1,control_17.2,control_17.3" data-difficulty="easy"><a href="Tools/CIS_Incident_Response_Worksheet.html"><h3>CIS Incident Response Worksheet</h3></a></div>
+        <div class="grid-item" data-control="control_17.1,control_17.2,control_17.3" data-difficulty="medium"><a href="Tools/CIS_Incident_Response_Policy_Template.html"><h3>CIS Incident Response Policy Template</h3></a></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

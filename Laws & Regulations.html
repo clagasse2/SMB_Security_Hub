@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laws and Regulations</title>
+    <link rel="stylesheet" href="navbar.css"> <!-- Ensure this path is correct -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 20px;
+          
+        }
+
+       
+        .filters {
+           
+            width: 20%;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+
+
+        .filters h2, .states-title, .phi-title {
+            margin-bottom: 10px; /* Increased spacing */
+            text-align: left;
+        }
+
+        .scrollbox {
+            height: 200px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: left; /* States are left-aligned */
+        }
+
+        .phi-options {
+            display: flex;
+            justify-content: flex-start; /* Aligns items to the start of the container */
+            margin-bottom: 20px;
+        }
+
+        .phi-options label {
+            margin-right: 15px; /* Adds spacing between the radio button labels */
+        }
+
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Default to three columns */
+            gap: 10px;
+            padding: 10px;
+        }
+
+
+
+        .grid-item {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            text-align: center; /* Ensure the text within is centered */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            background-image: url('Images/background.webp'); /* Adjust path as needed */
+            background-size: cover; /* Cover the entire div */
+            background-position: center; /* Center the background image */
+            color: #000000; /* Change text color if needed for better visibility */
+            /* Add any additional styling as needed */
+            height: 150px; /* Fixed height to ensure all items are the same size */
+            box-sizing: border-box; /* Ensures padding is included in the height calculation */
+        }
+
+        .grid-item a {
+            color: inherit; /* Ensures links inside grid-items inherit the text color */
+            text-decoration: none; /* Optional: removes underline from links */
+        }
+
+        /* Style for Disclaimer Popup */
+.disclaimer-popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+}
+
+.disclaimer-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+button#acceptDisclaimer {
+    margin-top: 20px;
+}
+
+
+       
+
+    </style>
+</head>
+<script src="LawsFilterLogic.js"></script>
+<body>
+    <!-- Disclaimer Popup -->
+<div id="disclaimerPopup" class="disclaimer-popup">
+    <div class="disclaimer-content">
+        <p>This website requires the acceptance of our legal disclaimer.</p>
+        <!-- Include your legal disclaimer text here -->
+        <button id="acceptDisclaimer">Accept</button>
+    </div>
+</div>
+
+
+<div class="navbar">
+    <div class="navbar-brand"><a href="index.html"><h2>SMB Security Hub</h2></a></div>
+    <div class="nav-links">
+        <a href="Common Terms.html">Common Terms</a>
+        <a href="Laws & Regulations.html">Laws & Regulations</a>
+        <a href="Tools.html">Tools</a>
+        <a href="About.html">About</a>
+    </div>
+</div>
+
+    <div class="header">
+        <h1>Laws & Regulations</h1>
+        <div class="separator"></div>
+        <p class="subtext">Adjust the filters to best represent your business operations <br> <br><strong>This website provides general information and is not intended as legal advice</strong></p>
+    </div>
+
+<div class="content">
+    <div class="filters">
+        <h2>Filters</h2>
+        <div class="states-title">States of Operation/Customers</div>
+        <div class="scrollbox">
+            <!-- Multi-select checkbox of all 50 states -->
+            <label><input type="checkbox" name="state" value="alabama">Alabama</label>
+            <label><input type="checkbox" name="state" value="alaska">Alaska</label>
+            <label><input type="checkbox" name="state" value="arizona">Arizona</label>
+            <label><input type="checkbox" name="state" value="arkansas">Arkansas</label>
+            <label><input type="checkbox" name="state" value="california">California</label>
+            <label><input type="checkbox" name="state" value="colorado">Colorado</label>
+            <label><input type="checkbox" name="state" value="connecticut">Connecticut</label>
+            <label><input type="checkbox" name="state" value="delaware">Delaware</label>
+            <label><input type="checkbox" name="state" value="florida">Florida</label>
+            <label><input type="checkbox" name="state" value="georgia">Georgia</label>
+            <label><input type="checkbox" name="state" value="hawaii">Hawaii</label>
+            <label><input type="checkbox" name="state" value="idaho">Idaho</label>
+            <label><input type="checkbox" name="state" value="illinois">Illinois</label>
+            <label><input type="checkbox" name="state" value="indiana">Indiana</label>
+            <label><input type="checkbox" name="state" value="iowa">Iowa</label>
+            <label><input type="checkbox" name="state" value="kansas">Kansas</label>
+            <label><input type="checkbox" name="state" value="kentucky">Kentucky</label>
+            <label><input type="checkbox" name="state" value="louisiana">Louisiana</label>
+            <label><input type="checkbox" name="state" value="maine">Maine</label>
+            <label><input type="checkbox" name="state" value="maryland">Maryland</label>
+            <label><input type="checkbox" name="state" value="massachusetts">Massachusetts</label>
+            <label><input type="checkbox" name="state" value="michigan">Michigan</label>
+            <label><input type="checkbox" name="state" value="minnesota">Minnesota</label>
+            <label><input type="checkbox" name="state" value="mississippi">Mississippi</label>
+            <label><input type="checkbox" name="state" value="missouri">Missouri</label>
+            <label><input type="checkbox" name="state" value="montana">Montana</label>
+            <label><input type="checkbox" name="state" value="nebraska">Nebraska</label>
+            <label><input type="checkbox" name="state" value="nevada">Nevada</label>
+            <label><input type="checkbox" name="state" value="new hampshire">New Hampshire</label>
+            <label><input type="checkbox" name="state" value="new jersey">New Jersey</label>
+            <label><input type="checkbox" name="state" value="new mexico">New Mexico</label>
+            <label><input type="checkbox" name="state" value="new york">New York</label>
+            <label><input type="checkbox" name="state" value="north carolina">North Carolina</label>
+            <label><input type="checkbox" name="state" value="north dakota">North Dakota</label>
+            <label><input type="checkbox" name="state" value="ohio">Ohio</label>
+            <label><input type="checkbox" name="state" value="oklahoma">Oklahoma</label>
+            <label><input type="checkbox" name="state" value="oregon">Oregon</label>
+            <label><input type="checkbox" name="state" value="pennsylvania">Pennsylvania</label>
+            <label><input type="checkbox" name="state" value="rhode island">Rhode Island</label>
+            <label><input type="checkbox" name="state" value="south carolina">South Carolina</label>
+            <label><input type="checkbox" name="state" value="south dakota">South Dakota</label>
+            <label><input type="checkbox" name="state" value="tennessee">Tennessee</label>
+            <label><input type="checkbox" name="state" value="texas">Texas</label>
+            <label><input type="checkbox" name="state" value="utah">Utah</label>
+            <label><input type="checkbox" name="state" value="vermont">Vermont</label>
+            <label><input type="checkbox" name="state" value="virginia">Virginia</label>
+            <label><input type="checkbox" name="state" value="washington">Washington</label>
+            <label><input type="checkbox" name="state" value="west virginia">West Virginia</label>
+            <label><input type="checkbox" name="state" value="wisconsin">Wisconsin</label>
+            <label><input type="checkbox" name="state" value="wyoming">Wyoming</label>
+        </div>
+        <div class="phi-title">PHI Collected/Processed</div>
+        <div class="phi-options">
+            <label><input type="radio" name="phi" value="yes" checked>Yes</label>
+            <label><input type="radio" name="phi" value="no">No</label>
+        </div>
+    </div>
+
+    <div class="grid">
+        <!-- 3-box-wide grid, each box as a link -->
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/State_Data_Breach_Notification_Statutes.html"><h3>State Data Breach Notification Statutes</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Sarbanes_Oxley.html"><h3>Sarbanes Oxley</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Gramm_Leach_Bliley_.html"><h3>Gramm Leach Bliley </h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Federal_Trade_Comission_Act_5.html"><h3>Federal Trade Comission Act 5</h3></a></div>
+        <div class="grid-item" data-state="Federal" data-phi="yes"><a href="Laws & Regulations/Health_Insurance_Portability_and_Accountability_Act.html"><h3>Health Insurance Portability and Accountability Act</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Defense_Federal_Acquisition_Regulation.html"><h3>Defense Federal Acquisition Regulation</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Children's_Online_Privacy_Protection_Act.html"><h3>Children's Online Privacy Protection Act</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Consumer_Privacy_Protection_Act_of_2017.html"><h3>Consumer Privacy Protection Act of 2017</h3></a></div>
+        <div class="grid-item" data-state="Federal"><a href="Laws & Regulations/Payment_Card_Industry_Data_Security_Standard.html"><h3>Payment Card Industry Data Security Standard</h3></a></div>
+        <div class="grid-item" data-state="alabama"><a href="Laws & Regulations/Alabama_Information_Security_Standard.html"><h3>Alabama Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="arkansas"><a href="Laws & Regulations/Arkansas_Information_Security_Standard.html"><h3>Arkansas Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="california"><a href="Laws & Regulations/California_Information_Security_Standard.html"><h3>California Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="colorado"><a href="Laws & Regulations/Colorado_Information_Security_Standard.html"><h3>Colorado Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="connecticut"><a href="Laws & Regulations/Connecticut_Information_Security_Standard.html"><h3>Connecticut Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="florida"><a href="Laws & Regulations/Florida_Information_Security_Standard.html"><h3>Florida Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="illinois"><a href="Laws & Regulations/Illinois_Information_Security_Standard.html"><h3>Illinois Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="indiana"><a href="Laws & Regulations/Indiana_Information_Security_Standard.html"><h3>Indiana Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="kansas"><a href="Laws & Regulations/Kansas_Information_Security_Standard.html"><h3>Kansas Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="kentucky"><a href="Laws & Regulations/Kentucky_Information_Security_Standard.html"><h3>Kentucky Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="louisiana"><a href="Laws & Regulations/Louisiana_Information_Security_Standard.html"><h3>Louisiana Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="maryland"><a href="Laws & Regulations/Maryland_Information_Security_Standard.html"><h3>Maryland Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="massachusetts"><a href="Laws & Regulations/Massachusetts_Information_Security_Standard.html"><h3>Massachusetts Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="michigan"><a href="Laws & Regulations/Michigan_Information_Security_Standard.html"><h3>Michigan Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="nebraska"><a href="Laws & Regulations/Nebraska_Information_Security_Standard.html"><h3>Nebraska Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="nevada"><a href="Laws & Regulations/Nevada_Information_Security_Standard.html"><h3>Nevada Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="new mexico"><a href="Laws & Regulations/New_Mexico_Information_Security_Standard.html"><h3>New Mexico Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="new york"><a href="Laws & Regulations/New_York_SHIELD_Act.html"><h3>New York SHIELD Act</h3></a></div>
+        <div class="grid-item" data-state="ohio"><a href="Laws & Regulations/Ohio_Information_Security_Standard.html"><h3>Ohio Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="oregon"><a href="Laws & Regulations/Oregon_Information_Security_Standard.html"><h3>Oregon Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="rhode island"><a href="Laws & Regulations/Rhode_Island_Information_Security_Standard.html"><h3>Rhode Island Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="south carolina"><a href="Laws & Regulations/South_Carolina_Information_Security_Standard.html"><h3>South Carolina Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="texas"><a href="Laws & Regulations/Texas_Information_Security_Standard.html"><h3>Texas Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="utah"><a href="Laws & Regulations/Utah_Information_Security_Standard.html"><h3>Utah Information Security Standard</h3></a></div>
+        <div class="grid-item" data-state="vermont"><a href="Laws & Regulations/Vermont_Information_Security_Standard.html"><h3>Vermont Information Security Standard</h3></a></div>
+    </div>
+</div>
+
+</body>
+</html>
